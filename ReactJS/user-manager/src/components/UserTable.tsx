@@ -87,7 +87,7 @@ const UserTable: React.FC = () => {
                     <div className="card-body">
                         <div className="flex justify-between items-center flex-wrap gap-4">
                             <div>
-                                <h1 className="h3 mb-1 text-gray-800">Gestión de Usuarios</h1>
+                                <h1 className="h3 mb-1 text-gray-800 font-bold">Gestión de Usuarios</h1>
                                 <p className="text-gray-500 mb-0">Administra los usuarios del sistema de forma sencilla</p>
                             </div>
                             <button
