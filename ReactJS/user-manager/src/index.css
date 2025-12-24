@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* src/index.css */
 
 /* 1. Directivas de Tailwind - siempre al principio */
@@ -7,16 +9,16 @@
 
 /* 2. Capa base: estilos globales */
 @layer base {
-    body {
-        @apply font-sans antialiased;
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        background-color: #f8f9fa;
-        /* fondo gris claro como Bootstrap */
-        color: #212529;
-        /* texto oscuro estándar */
+
+    * {
+        font-family: 'Poppins', sans-serif;
     }
 
-    /* Opcional: scrollbars personalizados */
+    body {
+        background-color: #f8f9fa;
+        color: #212529;
+    }
+
     ::-webkit-scrollbar {
         width: 8px;
     }
@@ -35,10 +37,8 @@
     }
 }
 
-/* 3. Capa components: clases reutilizables personalizadas */
 @layer components {
 
-    /* Tus clases glassmorphism anteriores (si las quieres mantener) */
     .glass-card {
         @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl;
     }
@@ -47,7 +47,6 @@
         @apply bg-white/90 backdrop-blur-2xl border border-white/30 shadow-3xl rounded-2xl;
     }
 
-    /* === EMULACIÓN DE BOOTSTRAP 5.2 CON TAILWIND === */
     .btn {
         @apply inline-block px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
     }
@@ -145,10 +144,8 @@
     }
 }
 
-/* 4. Capa utilities: utilidades personalizadas (opcional) */
 @layer utilities {
 
-    /* Ejemplo: truncar texto en 2 líneas */
     .truncate-2 {
         overflow: hidden;
         display: -webkit-box;
