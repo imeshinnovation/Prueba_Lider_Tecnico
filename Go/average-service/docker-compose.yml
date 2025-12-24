@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3801:3801"
+    environment:
+      - ENV=development
+      - PORT=3801
+    restart: unless-stopped
