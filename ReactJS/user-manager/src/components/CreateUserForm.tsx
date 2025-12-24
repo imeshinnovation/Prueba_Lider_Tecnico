@@ -66,7 +66,7 @@ export const CreateUserForm: React.FC<Props> = ({ onClose }) => {
             </div>
 
             <div>
-                <label htmlFor="age" className="block text-sm font-medium text-gray-700">Edad (opcional)</label>
+                <label htmlFor="age" className="block text-sm font-medium text-gray-700">Edad</label>
                 <input
                     id="age"
                     {...register('age', { valueAsNumber: true })}
